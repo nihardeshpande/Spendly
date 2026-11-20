@@ -22,7 +22,7 @@
 
         <div class="hero-actions">
             <a href="{{ url_for('register') }}" class="btn-primary">Create free account</a>
-            <a href="#" class="btn-ghost">See how it works</a>
+            <button type="button" class="btn-ghost" id="see-how-btn">See how it works</button>
         </div>
 
         <div class="hero-dashboard">
@@ -102,6 +102,28 @@
     </div>
 </section>
 
+        <a href="{{ url_for('register') }}" class="btn-primary">Create free account</a>
+    </section>
+
+    <!-- How it works modal -->
+    <div class="modal-overlay" id="how-modal" aria-hidden="true">
+        <div class="modal-container" role="dialog" aria-modal="true" aria-label="See how it works">
+            <button type="button" class="modal-close" id="modal-close" aria-label="Close">
+                <span class="close-icon">×</span>
+                <span class="sr-only">Close</span>
+            </button>
+            <div class="modal-video">
+                <iframe id="modal-iframe"
+                        width="960"
+                        height="540"
+                        src="about:blank"
+                        title="How Spendly works"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen>
+                </iframe>
+            </div>
+        </div>
+    </div>
+
 {% endblock %}
-
-
