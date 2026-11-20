@@ -369,6 +369,51 @@ a { color: inherit; text-decoration: none; }
 }
 
 /* ------------------------------------------------------------------ */
+/* Terms / legal pages                                                 */
+/* ------------------------------------------------------------------ */
+
+.page-section {
+    padding: 6rem 2rem;
+    background: var(--paper);
+}
+
+.page-inner {
+    max-width: var(--max-width);
+    margin: 0 auto;
+}
+
+.page-title {
+    font-family: var(--font-display);
+    font-size: clamp(2rem, 4vw, 3rem);
+    color: var(--ink);
+    margin-bottom: 0.5rem;
+}
+
+.page-lede {
+    color: var(--ink-faint);
+    font-size: 0.9rem;
+    margin-bottom: 3rem;
+}
+
+.page-body {
+    max-width: 760px;
+    line-height: 1.7;
+    color: var(--ink-soft);
+}
+
+.page-body h2 {
+    font-family: var(--font-display);
+    font-size: 1.3rem;
+    color: var(--ink);
+    margin-top: 2.5rem;
+    margin-bottom: 0.75rem;
+}
+
+.page-body p {
+    margin-bottom: 1rem;
+}
+
+/* ------------------------------------------------------------------ */
 /* Auth pages                                                          */
 /* ------------------------------------------------------------------ */
 
